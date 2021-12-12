@@ -7,4 +7,5 @@ modalButtonElement.onclick = function (event){
 
 modalCloseButtonElement.onclick = function (event) {
     document.body.classList.remove('modal-body')
+    
 }

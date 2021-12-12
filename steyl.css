@@ -1,7 +1,9 @@
 body {
     position: relative;
     margin: 0;
+    display: flex;
     padding: 0;
+    background:steelblue ;
 }
 .modal-body .modal-background {
     position: absolute;
@@ -13,13 +15,57 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 1s;
 }
+
+.modal-body:hover .modal-background:hover{  
+    transform: translate(30%); 
+
+
+}
+
 .modal{
     display: none;
 }
 .modal-background .modal{
     width: 500px;
     height: 500px;
-    background-color:white;
+    background-color: steelblue;
     display: block;
+    transition: .3s;
+}
+
+.modal-button{
+    margin-top: 50px;
+    margin-left: 20px;
+    color:black;
+    background: white;
+    padding: 10px 17px;
+    border: .9px solid black;
+    border-radius: 5px;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.modal-button:hover{
+    background: rgb(73, 73, 248);
+    color: white;
+    border: .9px solid blue;
+}
+
+.modal-close{
+    margin-top: 50px;
+    margin-left: 5px;
+    color:black;
+    background: white;
+    padding: 10px 20px;
+    border: .9px solid black;
+    border-radius: 5px;
+    transition:  .3s;
+}
+
+.modal-close:hover{
+    background: rgb(248, 73, 102);
+    color: white;
+    border: .9px solid blue;
 }
