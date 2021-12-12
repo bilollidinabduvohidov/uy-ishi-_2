@@ -1,0 +1,25 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.modal-body .modal-background {
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    display: none;
+}
+.modal-background .modal{
+    width: 500px;
+    height: 500px;
+    background-color:white;
+    display: block;
+}
